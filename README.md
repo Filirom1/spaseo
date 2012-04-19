@@ -42,6 +42,6 @@ Only works with pushState web applications.
 
 ## Are you looking for a pushState server ?
 
-Use <https://github.com/Filirom1/serveAndWatch> with the -P option.
+Use <https://github.com/Backbonist/serveAndWatch> with the -P option.
 
 ### LICENSE MIT
