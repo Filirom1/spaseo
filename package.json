@@ -1,22 +1,39 @@
 {
   "author": "Filirom1 <filirom1@gmail.com>",
   "name": "spaseo",
+  "description": "Scrapp your Single Page Web Application (SPA) for Search Engine (SEO).",
   "version": "0.1.0",
   "repository": {
-    "url": ""
+    "type": "git",
+    "url": "https://Filirom1@github.com/Filirom1/spaseo.git"
   },
   "main": "lib/web.js",
+  "bin": {
+    "spaseo": "bin/spaseo.js"
+  },
   "dependencies": {
     "zombie": "~0.12.15",
     "async": "~0.1.18",
     "underscore": "~1.3.1",
     "connect": "~1.8.6",
     "ncp": "~0.2.6",
-    "mkdirp": "~0.3.1"
+    "mkdirp": "~0.3.1",
+    "nopt": "http://nodeload.github.com/Filirom1/nopt/tarball/master#pull-request-in-progress"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "vows": "~0.6.2"
+  },
   "optionalDependencies": {},
   "engines": {
     "node": "*"
-  }
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/vows test/* --spec"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ]
 }
