@@ -1,7 +1,7 @@
 var vows = require('vows'),
   assert = require('assert'),
   Path = require('path'),
-  web = require('../lib/web');
+  web = require('../lib/crawler');
 
 vows.describe('Test the web crawler')
 .addBatch({

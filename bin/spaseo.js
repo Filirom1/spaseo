@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-var web = require('../lib/web'),
+var crawler = require('../lib/crawler'),
   file = require('../lib/file'),
   Path = require('path'),
   fs = require('fs'),
@@ -64,7 +64,7 @@ if(fs.readdirSync(Path.join(options.outputdir)).length > 0){
   throw new Error(options.outputdir + ' is not empty.');
 }
 
-web(options.inputdir, options, function(e, data){
+crawler(options.inputdir, options, function(e, data){
   if(e) return console.error(e);
   file(options.inputdir, options.outputdir, data, function(e){
     if(e) return console.error(e);
