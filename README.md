@@ -3,6 +3,8 @@
 Make your pushStae Web application readable by Search-Engine, or browser
 that do not supprt javascript.
 
+Only works with pushState web applications.
+
 ## Install
 
     $ npm install -g spaseo
@@ -81,8 +83,7 @@ Usage: spaseo-proxy [target]
 
 ## Are you looking for a pushState server ?
 
-Use <https://github.com/Filirom1/serveAndWatch> with the `--pushState`, `-P` option.
-
+Use <https://github.com/Backbonist/serveAndWatch> with the `--pushState`, `-P` option.
 
 ### LICENSE MIT
 
