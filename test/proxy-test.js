@@ -19,7 +19,7 @@ vows.describe('Test the web crawler')
       topic: function(){
         this.proxy = createProxy({
           target: Url.parse('http://localhost:3000'),
-          include: '{**/,**/search/**,**/toto}'
+          include: '{/,/search/**,/toto}'
         }).listen(3001, this.callback);
       },
       teardown: function(){
@@ -43,7 +43,7 @@ vows.describe('Test the web crawler')
       },
       'When requesting /': {
         topic: function(){
-          request.get('http://127.0.0.1:3001/fries/p2', this.callback)
+          request.get('http://127.0.0.1:3001/search/fries/p2', this.callback)
         },
         'Then the DOM is returned': function(err, res, body){
           assert.include(body, '<a href="/search/fries">fries</a>');

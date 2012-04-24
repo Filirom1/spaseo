@@ -1,15 +1,16 @@
 {
   "author": "Filirom1 <filirom1@gmail.com>",
   "name": "spaseo",
-  "description": "Scrapp your Single Page Web Application (SPA) for Search Engine (SEO).",
-  "version": "0.1.0",
+  "description": "Make your Single Page Web Application (SPA) readable by Search Engines (SEO). Only works with pushState.",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://Filirom1@github.com/Filirom1/spaseo.git"
   },
   "main": "lib/web.js",
   "bin": {
-    "spaseo": "bin/spaseo.js"
+    "spaseo": "bin/spaseo.js",
+    "spaseo-proxy": "bin/spaseo-proxy.js"
   },
   "dependencies": {
     "zombie": "~0.12.15",
