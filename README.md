@@ -58,18 +58,19 @@ spaseo-proxy, they will be able to read the content.
 
 Usage: spaseo-proxy [target]
 
-    --host           The hostname to listen on                       0.0.0.0
-    --port, -p       The port to listen on                           8000
-    --target, -t     The target to proxify
-    --include, -i    A glob pattern that match targets to process    {**/index.html,**/,**/?}
-    --help, -h       show usage                                      false
-    --verbose, -v    print log                                       true
+    --host                  The hostname to listen on                          0.0.0.0
+    --port, -p              The port to listen on                              800
+    --target, -t            The target to proxify
+    --include-glob, -g      A glob pattern, if matched then process the URL
+    --include-regexp, -r    A regexp, if matched then process the URL
+    --help, -h              show usage                                         false
+    --verbose, -v           print log                                          true
 
 
 ### Exemple
 
     $ serve --pushState --port 3000 example/in &
-    $ spaseo-proxy http://127.0.0.1:3000 -i "{/,/toto,**/search/**}" &
+    $ spaseo-proxy http://127.0.0.1:3000 -r / -r /toto -r /search/ &
     proxify http://127.0.0.1:3000/ on port 8000
 
     $ chromium http://127.0.0.1:8000/search/fries &

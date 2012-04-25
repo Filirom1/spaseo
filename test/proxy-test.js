@@ -19,7 +19,7 @@ vows.describe('Test the web crawler')
       topic: function(){
         this.proxy = createProxy({
           target: Url.parse('http://localhost:3000'),
-          include: '{/,/search/**,/toto}'
+          "include-regexp": [/\//,/\/search/,/\/toto/]
         }).listen(3001, this.callback);
       },
       teardown: function(){
