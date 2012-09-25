@@ -86,6 +86,22 @@ Usage: spaseo-proxy [target]
 
 Use <https://github.com/Backbonist/serveAndWatch> with the `--pushState`, `-P` option.
 
+## About Conditional Comment
+
+Everything before the < HEAD > is kept intact.
+
+For exemple, if your html is built with html5 boilerplate the following conditional comments will be kept intact.
+
+    <!doctype html>
+    <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+    <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+    <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+    <!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+    <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+    <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+
+
 ### LICENSE MIT
 
 

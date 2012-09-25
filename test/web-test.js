@@ -29,6 +29,8 @@ vows.describe('Test the web crawler')
           '/search/tomatoes/p2',
           '/search/tomatoes/p3'
         ]);
+        assert.include(data['/'], '<!doctype html>');
+        assert.include(data['/'], '<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->');
         assert.include(data['/'], '<h2>Welcome on board</h2>');
         assert.include(data['/toto'], '<h2>Hey guy</h2>');
         assertHtmlCached(data, 'fries');
