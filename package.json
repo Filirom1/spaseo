@@ -2,7 +2,7 @@
   "author": "Filirom1 <filirom1@gmail.com>",
   "name": "spaseo",
   "description": "Make your Single Page Web Application (SPA) readable by Search Engines (SEO). Only works with pushState.",
-  "version": "0.3.3",
+  "version": "0.3.5",
   "repository": {
     "type": "git",
     "url": "https://Filirom1@github.com/Filirom1/spaseo.git"
@@ -20,7 +20,7 @@
     "ncp": "~0.2.6",
     "mkdirp": "~0.3.1",
     "http-proxy": "~0.8.0",
-    "nopt": "http://nodeload.github.com/Filirom1/nopt/tarball/master#pull-request-in-progress",
+    "nopt": "http://github.com/Filirom1/nopt/archive/master.tar.gz#pull-request-in-progress",
     "minimatch": "~0.2.4"
   },
   "devDependencies": {
