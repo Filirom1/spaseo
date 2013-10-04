@@ -2,7 +2,7 @@
   "author": "Filirom1 <filirom1@gmail.com>",
   "name": "spaseo",
   "description": "Make your Single Page Web Application (SPA) readable by Search Engines (SEO). Only works with pushState.",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "repository": {
     "type": "git",
     "url": "https://Filirom1@github.com/Filirom1/spaseo.git"
